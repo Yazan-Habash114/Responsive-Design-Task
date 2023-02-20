@@ -40,7 +40,6 @@ nav ul li {
     margin: 0 1.5rem;
     font-weight: bold;
     font-size: 16px;
-    color: #717171;
     letter-spacing: 3.2px;
     text-transform: uppercase;
     cursor: pointer;
@@ -50,6 +49,11 @@ nav ul li {
 nav ul li:hover {
     border-bottom: 2px solid #717171;
     padding-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #717171;
 }
 
 
@@ -90,6 +94,7 @@ p.explanation {
 .inline-text {
     color: #1792D2;
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .continue-reading {
@@ -123,6 +128,23 @@ hr {
     height: 242px;
     background-size: cover;
     background-position: center;
+}
+
+#life {
+    background-image: url(./images/life.jpg);
+}
+
+#food {
+    background-image: url(./images/food.jpg);
+}
+
+#work {
+    background-image: url(./images/work.jpg);
+}
+
+#deco {
+    background-image: url(./images/deco.jpg);
+    background-position: left;
 }
 
 .post-img {
@@ -224,4 +246,118 @@ footer p {
 .copyright {
     opacity: 0.54;
     font-size: 14px;
+}
+
+
+/* Media queries */
+@media screen and (max-width: 1200px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .right {
+        margin: 1rem 0 0 0;
+    }
+
+    /* About me */
+    .card-border {
+        width: 714px;
+    }
+
+    .card-img {
+        width: 100%;
+        height: 275px;
+        object-fit: cover;
+    }
+
+    .card-text,
+    .post-card-text {
+        font-size: 20px;
+        width: 100%;
+    }
+
+    /* Recent posts */
+    .post-card-img {
+        width: 100%;
+        height: 275px;
+        object-fit: cover;
+    }
+
+    .card-seperator {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 4rem 0;
+    }
+
+    nav div {
+        cursor: default;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    nav>ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 1rem 0;
+    }
+
+    main {
+        margin: 0 2rem;
+    }
+
+    main div,
+    main div section,
+    hr,
+    .life-img,
+    .post-left-section,
+    .img-container {
+        width: 100%;
+    }
+
+    .post {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .post-right-section {
+        margin-left: 0;
+        margin-bottom: 4rem;
+    }
+
+    .post {
+        flex-direction: column;
+    }
+
+    /* Right section */
+    .right,
+    .card-border {
+        width: 100%;
+    }
+}
+
+
+/* about.html */
+.about-img {
+    width: 714px;
+    height: 308px;
+    object-fit: cover;
+    margin-bottom: 2rem;
+}
+
+.heading-par {
+    color: #1792D2;
+    font-size: 21px;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    font-weight: bold;
 }

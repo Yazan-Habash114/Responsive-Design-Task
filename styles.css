@@ -27,6 +27,7 @@ nav div p {
     font-size: 12px;
     text-transform: uppercase;
     font-weight: bold;
+    letter-spacing: 2.4px;
 }
 
 nav>ul {
@@ -42,9 +43,185 @@ nav ul li {
     color: #717171;
     letter-spacing: 3.2px;
     text-transform: uppercase;
+    cursor: pointer;
+    padding-bottom: 2px;
 }
 
-nav ul li:first-child {
+nav ul li:hover {
     border-bottom: 2px solid #717171;
-    padding-bottom: 3px;
+    padding-bottom: 0;
+}
+
+
+/* Main */
+main {
+    margin: 3rem 8rem;
+    display: flex;
+    flex-direction: row;
+}
+
+main div section {
+    width: 714px;
+}
+
+.life-img {
+    width: 714px;
+}
+
+.date-and-comments {
+    color: #707070;
+    margin: 26px 0;
+    font-size: 14px;
+}
+
+section h3 {
+    color: #143774;
+    font-size: 24px;
+    letter-spacing: 4.8px;
+    margin-bottom: 1rem;
+}
+
+p.explanation {
+    font-size: 18px;
+    color: #707070;
+    margin-bottom: 1rem;
+}
+
+.inline-text {
+    color: #1792D2;
+    text-decoration: underline;
+}
+
+.continue-reading {
+    color: #1792D2;
+    letter-spacing: 2.8px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* Seperator */
+hr {
+    margin-top: 2rem;
+    border: 1px solid #707070;
+    width: 714px;
+}
+
+
+/* Post */
+.post {
+    width: 714px;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.img-container {
+    width: 198px;
+    height: 242px;
+    background-size: cover;
+    background-position: center;
+}
+
+.post-img {
+    width: 198px;
+}
+
+.post-right-section {
+    margin-left: 27px;
+}
+
+.post-title {
+    color: #143774;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.post-text {
+    margin: 2rem 0;
+    color: #707070;
+    font-size: 18px;
+}
+
+
+/* Right side */
+.right {
+    margin-left: 51px;
+}
+
+.card-border {
+    border: 20px solid #EBEBEB;
+    margin-bottom: 45px;
+}
+
+.card,
+.post-card {
+    padding: 42px 45px;
+}
+
+.card-title {
+    color: #143774;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3.6px;
+}
+
+.card-img {
+    width: 150px;
+    height: 133px;
+    margin-top: 17px;
+    margin-bottom: 28px;
+}
+
+.card-text {
+    width: 162px;
+    color: #143774;
+    font-size: 14px;
+}
+
+
+/* Recent posts */
+.post-card-img {
+    width: 150px;
+    height: 87px;
+    margin-top: 17px;
+    margin-bottom: 10px;
+}
+
+.post-card-text {
+    color: #143774;
+    font-size: 18px;
+    width: 162px;
+}
+
+.card-seperator {
+    border: 1px solid #707070;
+    width: 150px;
+    margin: 0;
+    margin-left: 45px;
+    margin-right: 0;
+}
+
+
+/* Footer */
+footer {
+    background-color: #143774;
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer p {
+    color: #fff;
+    opacity: 0.8;
+}
+
+.copyright {
+    opacity: 0.54;
+    font-size: 14px;
 }

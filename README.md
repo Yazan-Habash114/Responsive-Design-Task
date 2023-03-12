@@ -15,7 +15,6 @@ This project is a practice for Responsive Web Designing priciples
 [Click Here](https://yazan-habash114.github.io/Responsive-Design-Task/)
 
 ## Colours Used
-
 | Hex Value |
 | --------- |
 | #143774 |
